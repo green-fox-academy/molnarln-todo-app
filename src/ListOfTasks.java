@@ -21,9 +21,9 @@ public class ListOfTasks {
             ArrayList<String> stringTasks = new ArrayList<>();
             stringTasks.addAll(Files.readAllLines(filePath));
 
-            for (int i = 0; i < stringTasks.size()-1; i++) {
+            for (int i = 0; i < stringTasks.size(); i++) {
 
-                System.out.println(i+1 + stringTasks.get(i));
+                System.out.println(i+1 + " - "+ stringTasks.get(i));
             }
 
         } catch (Exception ex) {
