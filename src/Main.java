@@ -1,6 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
+        ListOfTasks list = new ListOfTasks();
 
         if (args.length == 0) {
             System.out.println("Command Line Todo application" + "\n" + "==============================" + "\n");
@@ -10,9 +11,12 @@ public class Main {
             System.out.println(" -c Completes a task");
             return;
         }
-        if ((args[0]).equals("-l")) {
-            ListOfTasks list = new ListOfTasks();
-            list.listTasks();
+        if ((args[0]).equals("-l") && args.length < 2) {
+
+            list.getTasks();
+        }
+        if (args[0].equals("-l")){
+            list.addTask(args[1]);
         }
 
     }

@@ -1,12 +1,16 @@
 public class Task {
-    String task;
-    public Task (String task) {
-        this.task = task;
+
+    String taskDescription;
+
+
+    public Task () {
+        this.taskDescription = taskDescription;
     }
 
     public String getTask () {
-        return task;
+        return taskDescription;
     }
+
 
 
 
